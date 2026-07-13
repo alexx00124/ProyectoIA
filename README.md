@@ -1,6 +1,6 @@
 # Sistema Experto para Diagnóstico Básico de Fallas en Redes
 
-Repositorio documental del proyecto académico desarrollado para la asignatura **Sistemas Expertos e Inteligencia Artificial**. El proyecto propone un sistema híbrido para diagnosticar fallas básicas de red mediante reglas lógicas, Prolog, una ontología, un grafo de conocimiento y modelos de Machine Learning.
+Repositorio documental del proyecto académico desarrollado para la asignatura **Inteligencia Artificial**. El proyecto propone un sistema híbrido para diagnosticar fallas básicas de red mediante reglas lógicas, Prolog, una ontología, un grafo de conocimiento y modelos de Machine Learning.
 
 ## Integrantes
 
