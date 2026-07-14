@@ -103,6 +103,14 @@ Entregable académico editable sobre técnicas de Prompt Engineering aplicadas a
 
 Versión en Markdown del entregable anterior, preparada para consultarse directamente desde GitHub. Contiene los veinte prompts completos y sirve como fuente fácil de versionar y actualizar.
 
+### `Informe_Etico_IA_Responsable.docx`
+
+Informe académico editable sobre IA responsable, privacidad, sesgos, transparencia y explicabilidad. Contiene la auditoría ética específica del proyecto, el inventario de datos sensibles, la evaluación de cada componente, una matriz de veinte riesgos y un plan de mitigación con responsables, plazos, evidencias e indicadores.
+
+### `Informe_Etico_IA_Responsable.md`
+
+Versión en Markdown del informe ético para consulta directa en GitHub y control de cambios. Incluye criterios de aprobación antes de producción, gobierno del sistema, respuesta a incidentes y referencias oficiales de NIST, UNESCO, OCDE y la Ley 1581 de 2012.
+
 ## Resultados principales
 
 | Modelo | Tipo | Accuracy | F1-Score macro |
@@ -121,7 +129,8 @@ Random Forest obtuvo el mejor rendimiento sobre el dataset tabular y fue selecci
 3. Consultar `Manual_Tecnico_Sistema_Experto_Redes.pdf` para instalación, mantenimiento y extensión.
 4. Consultar `Manual_Usuario_Sistema_Experto_Redes.pdf` para comprender el uso desde la perspectiva del usuario final.
 5. Consultar `Investigacion_Prompt_Engineering.docx` o su versión `.md` para revisar las técnicas y los veinte prompts especializados.
-6. En Word, actualizar la tabla de contenido de `InformeFinal.docx` con clic derecho y **Actualizar campo**.
+6. Consultar `Informe_Etico_IA_Responsable.docx` o su versión `.md` para revisar la auditoría, la matriz de riesgos y el plan de mitigación.
+7. En Word, actualizar la tabla de contenido de `InformeFinal.docx` con clic derecho y **Actualizar campo**.
 
 ## Elementos pendientes para un repositorio completo de implementación
 
