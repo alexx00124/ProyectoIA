@@ -95,6 +95,14 @@ Explica:
 
 Este archivo. Resume el propósito del proyecto, describe cada documento y orienta la navegación del repositorio.
 
+### `Investigacion_Prompt_Engineering.docx`
+
+Entregable académico editable sobre técnicas de Prompt Engineering aplicadas al sistema experto. Incluye la investigación de Zero-Shot, One-Shot, Few-Shot y Chain of Thought; veinte prompts especializados; criterios de optimización; casos de prueba; métricas y un protocolo para comparar diferentes modelos de IA sin inventar resultados no ejecutados.
+
+### `Investigacion_Prompt_Engineering.md`
+
+Versión en Markdown del entregable anterior, preparada para consultarse directamente desde GitHub. Contiene los veinte prompts completos y sirve como fuente fácil de versionar y actualizar.
+
 ## Resultados principales
 
 | Modelo | Tipo | Accuracy | F1-Score macro |
@@ -112,7 +120,8 @@ Random Forest obtuvo el mejor rendimiento sobre el dataset tabular y fue selecci
 2. Consultar `Informe_Tecnico_Sistema_Experto_Redes.pdf` para ampliar fundamentos, metodología y resultados.
 3. Consultar `Manual_Tecnico_Sistema_Experto_Redes.pdf` para instalación, mantenimiento y extensión.
 4. Consultar `Manual_Usuario_Sistema_Experto_Redes.pdf` para comprender el uso desde la perspectiva del usuario final.
-5. En Word, actualizar la tabla de contenido de `InformeFinal.docx` con clic derecho y **Actualizar campo**.
+5. Consultar `Investigacion_Prompt_Engineering.docx` o su versión `.md` para revisar las técnicas y los veinte prompts especializados.
+6. En Word, actualizar la tabla de contenido de `InformeFinal.docx` con clic derecho y **Actualizar campo**.
 
 ## Elementos pendientes para un repositorio completo de implementación
 
