@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.proyecto-abp.edu/ontologia-diagnostico-red#"
+     xml:base="http://www.proyecto-abp.edu/ontologia-diagnostico-red"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <owl:Ontology rdf:about="http://www.proyecto-abp.edu/ontologia-diagnostico-red">
+        <rdfs:comment>Ontologia para el Sistema Experto de Diagnostico Basico de Fallas en Redes</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- ================= CLASES (5) ================= -->
+    <owl:Class rdf:about="#Dispositivo"/>
+    <owl:Class rdf:about="#Usuario"/>
+    <owl:Class rdf:about="#Falla"/>
+    <owl:Class rdf:about="#Regla_Diagnostico"/>
+    <owl:Class rdf:about="#Accion_Correctiva"/>
+
+    <!-- ============ OBJECT PROPERTIES (5 relaciones) ============ -->
+    <owl:ObjectProperty rdf:about="#presentaFalla">
+        <rdfs:domain rdf:resource="#Dispositivo"/>
+        <rdfs:range rdf:resource="#Falla"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#requiereAccion">
+        <rdfs:domain rdf:resource="#Falla"/>
+        <rdfs:range rdf:resource="#Accion_Correctiva"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#reportadaPor">
+        <rdfs:domain rdf:resource="#Falla"/>
+        <rdfs:range rdf:resource="#Usuario"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#conectadoA">
+        <rdfs:domain rdf:resource="#Dispositivo"/>
+        <rdfs:range rdf:resource="#Dispositivo"/>
+    </owl:ObjectProperty>
+
+    <owl:ObjectProperty rdf:about="#diagnosticadaPor">
+        <rdfs:domain rdf:resource="#Falla"/>
+        <rdfs:range rdf:resource="#Regla_Diagnostico"/>
+    </owl:ObjectProperty>
+
+    <!-- ================= INDIVIDUOS (10) ================= -->
+
+    <!-- Dispositivos (6) -->
+    <Dispositivo rdf:about="#router_principal"/>
+    <Dispositivo rdf:about="#switch_piso1"/>
+    <Dispositivo rdf:about="#servidor_web"/>
+    <Dispositivo rdf:about="#pc_marketing"/>
+    <Dispositivo rdf:about="#pc_finanzas"/>
+    <Dispositivo rdf:about="#pc_contabilidad"/>
+
+    <!-- Fallas (2) -->
+    <Falla rdf:about="#falla_hardware_fisico"/>
+    <Falla rdf:about="#conflicto_ip"/>
+
+    <!-- Acciones correctivas (2) -->
+    <Accion_Correctiva rdf:about="#reiniciar_router"/>
+    <Accion_Correctiva rdf:about="#verificar_cable_utp"/>
+
+    <!-- ================= RELACIONES ENTRE INDIVIDUOS ================= -->
+    <Dispositivo rdf:about="#pc_finanzas">
+        <presentaFalla rdf:resource="#falla_hardware_fisico"/>
+        <conectadoA rdf:resource="#switch_piso1"/>
+    </Dispositivo>
+
+    <Dispositivo rdf:about="#pc_contabilidad">
+        <presentaFalla rdf:resource="#conflicto_ip"/>
+        <conectadoA rdf:resource="#switch_piso1"/>
+    </Dispositivo>
+
+    <Dispositivo rdf:about="#switch_piso1">
+        <conectadoA rdf:resource="#router_principal"/>
+    </Dispositivo>
+
+    <Falla rdf:about="#falla_hardware_fisico">
+        <requiereAccion rdf:resource="#verificar_cable_utp"/>
+    </Falla>
+
+    <Falla rdf:about="#conflicto_ip">
+        <requiereAccion rdf:resource="#reiniciar_router"/>
+    </Falla>
+
+</rdf:RDF>
